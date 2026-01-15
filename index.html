@@ -1,22 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Nikhil Patil</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Welcome to my portfolio!</h1>
-      <p>
-        Here you can find information about me, my projects, and my contact
-        information.
-      </p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects/index.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+        <svg
+          id="sun-icon"
+          style="display: none"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg
+          id="moon-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
     </header>
-    <nav>
-      <ul>
-        <li><a href="projects/index.html">Projects</a></li>
-        <li><a href="about.html">About me</a></li>
-      </ul>
-    </nav>
+
+    <main>
+      <section class="hero">
+        <h1>Hello, I'm <span class="gradient-text">Nikhil Patil</span></h1>
+        <p>
+          Cybersecurity Specialist. I strive to maintain a high level of
+          professionalism and integrity in all aspects of my work.
+        </p>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <h3>DASE: Dynamic Adversary Simulation Engine</h3>
+              <p>
+                A dynamic system for creating and simulating adversary actions
+                to test employee awareness and response to cyber threats.
+              </p>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <h3>CodeQL Analysis Refinement</h3>
+              <p>
+                Worked on improving pre-existing CodeQL queries to reduce false
+                positives and improve detection accuracy. Utilized the Gemini
+                2.5 model to analyze queries to determine if the dataflows were
+                malicious or not.
+              </p>
+            </div>
+          </article>
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <h3>
+                Cybersecurity Awareness Training & Development for Huminatarian
+                Aid Organization
+              </h3>
+              <p>
+                Worked with organization in Buffalo, NY to develop and implement
+                a comprehensive cybersecurity awareness training program for
+                employees. Also implemented policies and procedures for them to
+                follow for the foreseeable future. This was through the Google
+                Cybersecurity Clinic
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts.js"></script>
   </body>
 </html>

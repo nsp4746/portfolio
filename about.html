@@ -1,43 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
+    <title>About | Nikhil Patil</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
   <body>
-    <h1>About me</h1>
-    <div class="about">
-      <h2>Overview</h2>
-      <p>
-        Hi, my name is Nikhil Patil. I am a recent graduate from the Rochester
-        Institute of Technology with a degree in Cybersecurity. I graduated with
-        both my B.S. and M.S. in Cybersecurity. In the vast world of
-        Cybersecurity, I have dipped my toes into almost all facets, working
-        with malware analysis, penetration testing, GRC roles, IT support roles.
-        I have yet to work at SOC or as an Security Engineer. I am currently
-        looking for my first full time role out of the college.
-      </p>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects/index.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+        <svg
+          id="sun-icon"
+          style="display: none"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg
+          id="moon-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </header>
 
-      <h2>Professional Experience</h2>
-      <p>
-        In terms of professional experience, I have worked as an intern at Five
-        Star Bank, where I was part of the Cybersecurity team. I worked
-        primarily as an GRC intern. I completed a NYDFS Part 500 compliance gap
-        review and other day to day tasks. I have also worked as an IT analyst
-        intern at ComTec Solutions. Here I shadowed senior employees day to day
-        and learned how the ins and outs of the MSP business, as well as working
-        in my first white collar environment. I am used to working in a team
-        environment, given that that I have worked in food service since I was
-        16. Throughout my college career I have also maintained a position as
-        Senior Staff at Campus Concessions, where I was in charge of regular
-        staff and supervising student workers. Another leadership position I
-        have was the president of the Rho Iota chapter of the Alpha Epsilon Pi
-        fraternity. Here I learned much about working with individuals with
-        different work ethics, backgrounds, and schedules. I am also a quick
-        learner, and am always eager to learn new things.
-      </p>
-    </div>
+    <main class="about-container">
+      <aside class="profile-section">
+        <div class="profile-placeholder">
+          <figure>
+            <img src="assets/images/suit2.jpg" alt="Nikhil Patil" />
+          </figure>
+        </div>
+      </aside>
+
+      <section class="bio-section">
+        <h2>About Me</h2>
+        <p>
+          Hi, my name is Nikhil Patil. I am a recent graduate from the Rochester
+          Institute of Technology with a degree in Cybersecurity. I graduated
+          with both my B.S. and M.S. in Cybersecurity. In the vast world of
+          Cybersecurity, I have dipped my toes into almost all facets, working
+          with malware analysis, penetration testing, GRC roles, IT support
+          roles. I am currently looking for my first full time role out of the
+          college.
+        </p>
+
+        <h3>Skills</h3>
+        <div class="skills-cloud">
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Linux Environments</span>
+          <span class="skill-tag">Active Directory Environments</span>
+          <span class="skill-tag">Windows Environments</span>
+          <span class="skill-tag">Network Security</span>
+          <span class="skill-tag">Vulnerability Assessment</span>
+          <span class="skill-tag">Penetration Testing</span>
+          <span class="skill-tag">Malware Analysis</span>
+          <!-- <span class="skill-tag">Incident Response</span> -->
+        </div>
+
+        <h3>Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Goverance Risk and Compliance Analyst Intern</h4>
+            <span>June 2025 - Aug 2025 • Five Star Bank</span>
+            <p>
+              Worked with the Cybersecurity team to ensure that the bank was
+              compliant with various regulations. This included working with the
+              team to identify and assess risks, as well as developing and
+              implementing controls to mitigate those risks. Additionally, I
+              also completed a compliance gap review.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4>IT Analyst Intern</h4>
+            <span>May 2023 - Aug 2023 • ComTec Solutions</span>
+            <p>
+              Worked with the IT team to learn about various IT processes and
+              procedures. This included working with the team to identify and
+              assess risks, as well as developing and implementing controls to
+              mitigate those risks. Also went on site visits to various client
+              sites to learn about their IT infrastructure.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts.js"></script>
   </body>
 </html>

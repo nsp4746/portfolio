@@ -1,31 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
+    <title>DASE | Nikhil Patil</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
-
   <body>
-    <h1>DASE: Dynamic Adversary Simulation Engine</h1>
-    <p>
-      This was my MS project for my M.S. in Cybersecurity. The focus was to
-      create dynamically generated scenarios for incident reponse training. The
-      way that it achieves this is by using company profiles that are fed into
-      an LLM which then asks an end user what kind of attack/scenario they'd
-      like to practice based on the companies tech stack. Due the LLM having
-      this knowledge of company tech stack, it can create a scenario that is
-      relevant to the company, additionally it reduces the risks of
-      hallucination. This is because it is grounded to the profile. If we were
-      to dynamically create companies at run time, it would not go over well for
-      the design and end user experience. Additionally, the LLM is also
-      instructed to provide feedback to end users once a session is over. A user
-      can also select the amount of actions they'd like the simulated adversary
-      to take as well as the difficutly, and between three different company
-      profiles. As part of the project, I also conducted user-testing survey to
-      understand where and how I can improve the project and user experience.
-      Additionally, I also conducted a through literature review to find
-      supporting works that supports my methodology.
-    </p>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+        <svg
+          id="sun-icon"
+          style="display: none"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg
+          id="moon-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </header>
+
+    <div class="project-hero" id="project-hero">
+      <h1>DASE: Dynamic Adversary Simulation Engine</h1>
+      <div class="project-meta">
+        <span>Cybersecurity</span>
+        <span>•</span>
+        <span>LLM Integration</span>
+        <span>•</span>
+        <span>Simulation InfoSec</span>
+      </div>
+      <div class="skills-cloud">
+        <span class="skill-tag">Large Language Models</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Adversary Emulation</span>
+      </div>
+      <div class="scroll-hint">Scroll for details ↓</div>
+    </div>
+
+    <main class="project-detail-container">
+      <a href="index.html" class="back-link">← Back to Projects</a>
+
+      <article class="project-content">
+        <h2>Overview</h2>
+        <p>
+          DASE was my Master's project for my M.S. in Cybersecurity. The core
+          focus was to create **dynamically generated scenarios** for incident
+          response training. Unlike traditional static simulations, DASE adapts
+          to the specific technology stack of a company, providing highly
+          relevant and realistic training environments.
+        </p>
+
+        <h2>How It Works</h2>
+        <p>
+          The engine utilizes Company Profiles as input for a Large Language
+          Model (LLM). The LLM interacts with the end-user to understand their
+          training needs and then generates a bespoke attack scenario.
+        </p>
+        <p>
+          Because the LLM is grounded in the specific company profile, it
+          significantly reduces the risk of hallucination and ensures the
+          generated content is technically accurate for that environment.
+          Dynamic generation at runtime ensures that the scenarios are fresh and
+          tailored, rather than using generic, pre-canned simulations.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>
+            <strong>Dynamic Scenario Generation:</strong> Creates unique attack
+            vectors based on real-time inputs.
+          </li>
+          <li>
+            <strong>Context-Aware:</strong> understands specific tech stacks to
+            generate relevant threats.
+          </li>
+          <li>
+            <strong>Interactive Feedback:</strong> The LLM provides detailed
+            feedback to users after the simulation concludes.
+          </li>
+          <li>
+            <strong>Customizable Review:</strong> Users can select difficulty
+            levels and the number of adversary actions.
+          </li>
+        </ul>
+
+        <h2>Methodology</h2>
+        <p>
+          As part of this project, I conducted extensive user testing surveys to
+          refine the user experience. A thorough literature review was also
+          performed to validate the methodology against current research in
+          adversary simulation and automated training.
+        </p>
+      </article>
+    </main>
+
+    <script src="../scripts.js"></script>
   </body>
 </html>
