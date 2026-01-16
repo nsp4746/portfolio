@@ -1,101 +1,131 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Title | Nikhil Patil</title>
+    <!-- Note: If placing this in the projects/ folder, change path to "../assets/css/style.css" -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title | Nikhil Patil</title>
-  <!-- Note: If placing this in the projects/ folder, change path to "../assets/css/style.css" -->
-  <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a
+          href="https://github.com/nsp4746"
+          target="_blank"
+          class="social-link github-link"
+          aria-label="GitHub"
+        ></a>
+        <a
+          href="https://linkedin.com/in/nikhilpatll"
+          target="_blank"
+          class="social-link linkedin-link"
+          aria-label="LinkedIn"
+        ></a>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle Theme"
+        ></button>
+      </div>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="index.html">Projects</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../resume.html">Resume</a></li>
-      </ul>
-    </nav>
-    <div class="nav-actions">
-      <a href="https://github.com/nsp4746" target="_blank" class="social-link github-link" aria-label="GitHub"></a>
-      <a href="https://linkedin.com/in/nikhilpatll" target="_blank" class="social-link linkedin-link"
-        aria-label="LinkedIn"></a>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme"></button>
+    <!-- Interactive Hero Section -->
+    <div class="project-hero" id="project-hero">
+      <h1>
+        Minimizing False Positives in CodeQL Taint Analysis Through LLM-Driven
+        Contextual Reasoning
+      </h1>
+      <div class="project-meta">
+        <span>Cybersecurity</span>
+        <span>•</span>
+        <span>CodeQL</span>
+        <span>•</span>
+        <span>LLM Integration</span>
+      </div>
+      <div class="skills-cloud">
+        <span class="skill-tag">Large Language Models</span>
+        <span class="skill-tag">CodeQL</span>
+        <span class="skill-tag">JavaScript</span>
+      </div>
+      <div class="scroll-hint">Scroll for details ↓</div>
     </div>
-  </header>
 
-  <!-- Interactive Hero Section -->
-  <div class="project-hero" id="project-hero">
-    <h1>
-      Minimizing False Positives in CodeQL Taint Analysis Through LLM-Driven
-      Contextual Reasoning
-    </h1>
-    <div class="project-meta">
-      <span>Cybersecurity</span>
-      <span>•</span>
-      <span>CodeQL</span>
-      <span>•</span>
-      <span>LLM Integration</span>
-    </div>
-    <div class="skills-cloud">
-      <span class="skill-tag">Large Language Models</span>
-      <span class="skill-tag">CodeQL</span>
-      <span class="skill-tag">JavaScript</span>
-    </div>
-    <div class="scroll-hint">Scroll for details ↓</div>
-  </div>
+    <main class="project-detail-container">
+      <!-- Change to "index.html" if this file is inside the projects/ folder -->
+      <a href="index.html" class="back-link">← Back to Projects</a>
 
-  <main class="project-detail-container">
-    <!-- Change to "index.html" if this file is inside the projects/ folder -->
-    <a href="index.html" class="back-link">← Back to Projects</a>
+      <article class="project-content">
+        <h2>Overview</h2>
+        <p>
+          Static Application Security Testing (SAST) tools, such as CodeQL, are
+          fundamental for identifying vulnerabilities at scale, yet they suffer
+          from a significant credibility problem due to high False Positive
+          Rates (FPR) [1] . This over-approximation leads to Alert Fatigue among
+          security analysts, increasing the cost of manual triage [ 1]. The
+          foundational UntrustIDE study demonstrated this challenge empirically,
+          finding an effective FPR of approximately 98% in CodeQL’s taint
+          analysis of VS Code extensions [ 1]. We propose a novel, scalable,
+          three-stage LLM Triage Pipeline that automates contextual reasoning to
+          filter noisy CodeQL alerts [1 ]. By transforming the purely structural
+          taint flow data produced by CodeQL into a contextual reasoning task
+          for a Large Language Model (LLM), we aim to reduce the baseline FPR of
+          > 98% to an industrially acceptable threshold of < 20% [ 1]. Our
+          initial empirical validation on a sampled dataset demonstrates the
+          LLM’s capability for path-aware reasoning and contextual
+          understanding, showcasing a promising path toward solving the most
+          persistent precision problem of static analysis [1].
+        </p>
 
-    <article class="project-content">
-      <h2>Overview</h2>
-      <p>
-        Static Application Security Testing (SAST) tools, such as CodeQL, are
-        fundamental for identifying vulnerabilities at scale, yet they suffer
-        from a significant credibility problem due to high False Positive
-        Rates (FPR) [1] . This over-approximation leads to Alert Fatigue among
-        security analysts, increasing the cost of manual triage [ 1]. The
-        foundational UntrustIDE study demonstrated this challenge empirically,
-        finding an effective FPR of approximately 98% in CodeQL’s taint
-        analysis of VS Code extensions [ 1]. We propose a novel, scalable,
-        three-stage LLM Triage Pipeline that automates contextual reasoning to
-        filter noisy CodeQL alerts [1 ]. By transforming the purely structural
-        taint flow data produced by CodeQL into a contextual reasoning task
-        for a Large Language Model (LLM), we aim to reduce the baseline FPR of
-        > 98% to an industrially acceptable threshold of < 20% [ 1]. Our initial empirical validation on a sampled
-          dataset demonstrates the LLM’s capability for path-aware reasoning and contextual understanding, showcasing a
-          promising path toward solving the most persistent precision problem of static analysis [1]. </p>
+        <h2>Challenges & Solutions</h2>
+        <p>
+          Some challenges that I encountered while working on this project was
+          definitely learning CodeQL. I had to learn how to use it in the
+          context of this project and understand its uses in order to obtain the
+          necessary information for the LLM triage pipeline. Another challenge
+          was working with LLMs and understanding how to best prompt them to
+          obtain the best results. Through research and experimentation, I was
+          able to overcome these challenges and successfully implement the LLM
+          triage pipeline. Also learning how to validate flows in JavaScript was
+          challenging!
+        </p>
 
-          <h2>Challenges & Solutions</h2>
-          <p>
-            Some challenges that I encountered while working on this project was definitely learning CodeQL. I had to
-            learn how to use it in the context of this project and understand its uses in order to obtain the necessary
-            information for the LLM triage pipeline. Another challenge was working with LLMs and understanding how to best
-            prompt them to obtain the best results. Through research and experimentation, I was able to overcome these
-            challenges and successfully implement the LLM triage pipeline. Also learning how to validate flows in JavaScript was challenging! 
-          </p>
+        <h2>Key Features</h2>
+        <ul>
+          <li>
+            <strong>Feature 1:</strong> LLM-based contextual reasoning for
+            filtering CodeQL alerts.
+          </li>
+          <li>
+            <strong>Feature 2:</strong> Scalable triage pipeline for reducing
+            false positives.
+          </li>
+          <li>
+            <strong>Feature 3:</strong> Empirical validation on a sampled
+            dataset.
+          </li>
+        </ul>
 
-          <h2>Key Features</h2>
-          <ul>
-            <li><strong>Feature 1:</strong> LLM-based contextual reasoning for filtering CodeQL alerts.</li>
-            <li><strong>Feature 2:</strong> Scalable triage pipeline for reducing false positives.</li>
-            <li><strong>Feature 3:</strong> Empirical validation on a sampled dataset.</li>
-          </ul>
+        <h2>Final Results</h2>
+        <p>
+          The project successfully demonstrated the feasibility of using LLMs to
+          reduce false positives in CodeQL taint analysis. Through empirical
+          validation, we showed that the LLM triage pipeline could significantly
+          improve precision while maintaining scalability.
+        </p>
+      </article>
+    </main>
 
-          <h2>Final Results</h2>
-          <p>
-            The project successfully demonstrated the feasibility of using LLMs to reduce false positives in CodeQL taint analysis. Through empirical validation, we showed that the LLM triage pipeline could significantly improve precision while maintaining scalability.
-          </p>
-    </article>
-  </main>
-
-  <!-- Note: If placing this in the projects/ folder, change path to "../scripts.js" -->
-  <script src="../scripts.js"></script>
-</body>
-
+    <!-- Note: If placing this in the projects/ folder, change path to "../scripts.js" -->
+    <script src="../scripts.js"></script>
+  </body>
 </html>
